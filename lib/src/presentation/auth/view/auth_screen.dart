@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_social_app/src/auth/controller/auth_controller.dart';
+import 'package:flutter_social_app/src/presentation/auth/controller/auth_controller.dart';
 import 'package:flutter_social_app/util/form_validator.dart';
 import 'package:flutter_social_app/util/my_style.dart';
 import 'package:get/get.dart';

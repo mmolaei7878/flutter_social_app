@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_social_app/router/route_names.dart';
 import 'package:get/get.dart';
 
 class CustomListTile extends StatelessWidget {
-  const CustomListTile({Key? key}) : super(key: key);
+  const CustomListTile({
+    Key? key,
+    this.address,
+    this.email,
+    this.name,
+  }) : super(key: key);
+
+  final String? name;
+  final String? email;
+  final String? address;
 
   @override
   Widget build(BuildContext context) {
@@ -30,13 +38,13 @@ class CustomListTile extends StatelessWidget {
                     SizedBox(
                       width: 10,
                     ),
-                    Expanded(flex: 8, child: Text("User \nName")),
+                    Expanded(flex: 8, child: Text('$name\n$email')),
                   ],
                 )),
             Expanded(
               flex: 1,
               child: Text(
-                "Adaejklrnajnkrldanlkdnasasdmaksldm;klasndmkl;asnmd;klnmsa;kldna;lksdnlkdn",
+                '$address',
                 overflow: TextOverflow.ellipsis,
                 maxLines: 1,
                 textAlign: TextAlign.left,
